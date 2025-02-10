@@ -26,12 +26,12 @@ module.exports = {
         host: '0.0.0.0',
         server: 'https',
         compress: true,
-        port: 8081,
-        allowedHosts: ['192.168.87.149', 'localhost'], 
+        port: 3000,
+        allowedHosts: ['192.168.87.149', '192.168.80.01', 'localhost'],
         client: {
             overlay: { warnings: false, errors: true },
         },
-    },
+    },    
     output: {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
